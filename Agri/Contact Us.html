@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=", initial-scale=1.0>
+    <link rel="stylesheet" href="agri.css">
+    <title>Contact Us</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="Contact Us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="">oraganic</a>
+        </div>
+        <ul>
+            <li><a href="Agri.html">Home</a></li>
+            <li><a href="abou.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="Contact Us.html">Contact</a></li>
+             <li><a class="active" href="product.html">Product</a></li>
+
+        </ul>
+
+         
+        <div class="menu">
+        
+           <div class="menu-line"></div>
+           <div class="menu-line"></div>
+           <div class="menu-line"></div>
+        </div>
+    </nav>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your message"></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-phone"></i>+91-8675105575</p>
+                    <p><i class="fas fa-envelope"></i>venkatvishnu@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 5th Mail Road , Velachery</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+<script>
+    const menu = document.querySelector('.menu')
+    const menulist = document.querySelector('nav ul')
+    menu.addEventListener('click',()=>{
+        menulist.classList.toggle('showmenu')
+    })
+</script>
+</html>
